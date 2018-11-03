@@ -1,11 +1,11 @@
 #include "Renderer.h"
 
-void Renderer::RenderThing(Object& thing)
+void Renderer::Render(const Button& thing)
 {
     thing.DrawMe();
 }
 
-void Renderer::RenderAndTranslateThing(Object& thing)
+void Renderer::Render(TextLabel& thing)
 {
     thing.Translate();
     thing.DrawMe();

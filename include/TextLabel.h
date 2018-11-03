@@ -5,10 +5,9 @@
 class TextLabel : public Object
 {
     std::string text;
-    void DrawMe() final;
 
 public:
-    TextLabel(std::string&& ref) : text(std::move(ref)) {}
-    void Translate() final;
-    ObjectType GetType() final { return ObjectType::TextLabel; }
+    TextLabel(std::string&& s) : text(std::move(s)) {}
+    void DrawMe() const;
+    void Translate();
 };

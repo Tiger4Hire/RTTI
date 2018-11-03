@@ -10,7 +10,7 @@
             "request": "launch",
             "program": "${workspaceFolder}/RTTI_Example",
             "args": [],
-            "stopAtEntry": false,
+            "stopAtEntry": true,
             "cwd": "${workspaceFolder}",
             "environment": [],
             "internalConsoleOptions": "openOnSessionStart",

@@ -4,6 +4,6 @@
 class Renderer
 {
 public:
-    void RenderThing(Object&);
-    void RenderAndTranslateThing(Object&);
+    void Render(const Button&);
+    void Render(TextLabel&);
 };
