@@ -7,6 +7,7 @@
 #include "Button.h"
 #include "ObjectList.h"
 #include "Renderer.h"
+#include "RenderPolicy.h"
 #include "TextLabel.h"
 
 /***************************************************************
@@ -22,19 +23,21 @@ ObjectList MakeSomeObject()
     return retval;
 }
 
+RenderPolicy GetPolicy(ObjectType type)
+{
+    switch (type)
+    {
+        case ObjectType::TextLabel:
+            return RenderPolicy::TranslateAndRender;
+        default:
+            return RenderPolicy::Render;
+    }
+}
+
 int main()
 {
     auto my_bag_of_shit = MakeSomeObject();
     Renderer renderer;
     for (auto& thing : my_bag_of_shit)
-    {
-        if (thing->GetType() == ObjectType::TextLabel)
-        {
-            renderer.RenderAndTranslateThing(*thing);
-        }
-        else
-        {
-            renderer.RenderThing(*thing);
-        }
-    }
+        renderer.RenderAndTranslateThing(*thing, GetPolicy(thing->GetType()));
 }

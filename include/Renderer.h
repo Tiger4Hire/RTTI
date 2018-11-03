@@ -1,9 +1,8 @@
 #pragma once
 #include "ObjectList.h"
-
+#include "RenderPolicy.h"
 class Renderer
 {
 public:
-    void RenderThing(Object&);
-    void RenderAndTranslateThing(Object&);
+    void RenderAndTranslateThing(Object&, RenderPolicy);
 };

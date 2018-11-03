@@ -1,12 +1,13 @@
 #include "Renderer.h"
 
-void Renderer::RenderThing(Object& thing)
+void Renderer::RenderAndTranslateThing(Object& thing, RenderPolicy policy)
 {
-    thing.DrawMe();
-}
-
-void Renderer::RenderAndTranslateThing(Object& thing)
-{
-    thing.Translate();
-    thing.DrawMe();
+    switch (policy)
+    {
+        case RenderPolicy::TranslateAndRender:
+            thing.Translate();
+            [[fallthrough]];  // disable warning that there is no break
+        default:
+            thing.DrawMe();
+    }
 }
