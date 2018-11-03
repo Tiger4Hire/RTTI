@@ -8,6 +8,6 @@ class TextLabel : public Object
     void DrawMe() final;
 
 public:
-    ~TextLabel();
     TextLabel(std::string&& ref) : text(std::move(ref)) {}
+    void Translate();
 };

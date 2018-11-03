@@ -5,3 +5,5 @@ Makefile
 cmake_install.cmake
 CMakeFiles/**
 CMakeCache.txt
+RTTI_Example
+src/stdafx.h.gch

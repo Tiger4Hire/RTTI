@@ -8,6 +8,6 @@ file(GLOB SOURCES "src/*.cpp")
 add_executable(RTTI_Example ${SOURCES})
 include_directories(include)
 add_compile_options(
-  "-Wall" "-Wpedantic" "-Wextra" "-fexceptions"
+  "-Wall" "-Wpedantic" "-Wextra" "-fexceptions" "-fno-rtti"
   "$<$<CONFIG:DEBUG>:-O0;-g3;-ggdb>"
 )
