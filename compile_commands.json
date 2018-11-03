@@ -6,6 +6,11 @@
 },
 {
   "directory": "/home/helpme/code/RTTI",
+  "command": "/usr/bin/c++   -I/home/helpme/code/RTTI/include  -g   -std=c++1z -Wall -Wpedantic -Wextra -fexceptions -fno-rtti -O0 -g3 -ggdb -o CMakeFiles/RTTI_Example.dir/src/Object.cpp.o -c /home/helpme/code/RTTI/src/Object.cpp",
+  "file": "/home/helpme/code/RTTI/src/Object.cpp"
+},
+{
+  "directory": "/home/helpme/code/RTTI",
   "command": "/usr/bin/c++   -I/home/helpme/code/RTTI/include  -g   -std=c++1z -Wall -Wpedantic -Wextra -fexceptions -fno-rtti -O0 -g3 -ggdb -o CMakeFiles/RTTI_Example.dir/src/Renderer.cpp.o -c /home/helpme/code/RTTI/src/Renderer.cpp",
   "file": "/home/helpme/code/RTTI/src/Renderer.cpp"
 },

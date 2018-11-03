@@ -1,8 +1,9 @@
 #include "Renderer.h"
+#include "RenderPolicy.h"
 
-void Renderer::RenderAndTranslateThing(Object& thing, RenderPolicy policy)
+void Renderer::RenderAndTranslateThing(Object& thing)
 {
-    switch (policy)
+    switch (thing.GetRenderPolicy(thing.GetType()))
     {
         case RenderPolicy::TranslateAndRender:
             thing.Translate();

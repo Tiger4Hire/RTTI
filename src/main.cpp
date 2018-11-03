@@ -23,21 +23,12 @@ ObjectList MakeSomeObject()
     return retval;
 }
 
-RenderPolicy GetPolicy(ObjectType type)
-{
-    switch (type)
-    {
-        case ObjectType::TextLabel:
-            return RenderPolicy::TranslateAndRender;
-        default:
-            return RenderPolicy::Render;
-    }
-}
-
+// Note : this code now no longer needs updating when new "RenderPolicies" are
+// added. Nor when new objects are added. This makes maintenence much easier.
 int main()
 {
     auto my_bag_of_shit = MakeSomeObject();
     Renderer renderer;
     for (auto& thing : my_bag_of_shit)
-        renderer.RenderAndTranslateThing(*thing, GetPolicy(thing->GetType()));
+        renderer.RenderAndTranslateThing(*thing);
 }

@@ -1,5 +1,5 @@
 #pragma once
-
+#include "RenderPolicy.h"
 /*************************************************************************
  * This is a pretty stupid use of a pure-interface. Object is so generic
  * that it is meaningless, and DrawMe is so generic, it may as well be called
@@ -25,6 +25,8 @@ public:
     Object(Object&&) = default;
     Object& operator=(Object&&) = default;
     // useful stuff
+    RenderPolicy GetRenderPolicy(ObjectType);  // note NOT VIRTUAL
+
     virtual void DrawMe() = 0;
     virtual void Translate() {}
     virtual ObjectType GetType() = 0;
