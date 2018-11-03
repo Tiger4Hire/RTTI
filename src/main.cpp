@@ -4,9 +4,10 @@
  * loop.
  * ************************************************************/
 
-#include "ObjectList.h"
-#include "TextLabel.h"
 #include "Button.h"
+#include "ObjectList.h"
+#include "Renderer.h"
+#include "TextLabel.h"
 
 /***************************************************************
  * Another benifit is that this could a "factory", but it's not
@@ -24,10 +25,16 @@ ObjectList MakeSomeObject()
 int main()
 {
     auto my_bag_of_shit = MakeSomeObject();
+    Renderer renderer;
     for (auto& thing : my_bag_of_shit)
     {
         if (thing->GetType() == ObjectType::TextLabel)
-            thing->Translate();
-        thing->DrawMe();
+        {
+            renderer.RenderAndTranslateThing(*thing);
+        }
+        else
+        {
+            renderer.RenderThing(*thing);
+        }
     }
 }
