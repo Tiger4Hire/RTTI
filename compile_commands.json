@@ -1,22 +1,42 @@
 [
 {
   "directory": "/home/helpme/code/RTTI",
-  "command": "/usr/bin/c++   -I/home/helpme/code/RTTI/include  -g   -std=c++1z -Wall -Wpedantic -Wextra -fexceptions -fno-rtti -O0 -g3 -ggdb -o CMakeFiles/RTTI_Example.dir/src/Button.cpp.o -c /home/helpme/code/RTTI/src/Button.cpp",
+  "command": "/usr/bin/c++   -I/home/helpme/code/RTTI/include  -O3 -DNDEBUG   -std=c++1z -Wall -Wpedantic -Wextra -fexceptions -fno-rtti -o CMakeFiles/RTTI_Example.dir/src/Button.cpp.o -c /home/helpme/code/RTTI/src/Button.cpp",
   "file": "/home/helpme/code/RTTI/src/Button.cpp"
 },
 {
   "directory": "/home/helpme/code/RTTI",
-  "command": "/usr/bin/c++   -I/home/helpme/code/RTTI/include  -g   -std=c++1z -Wall -Wpedantic -Wextra -fexceptions -fno-rtti -O0 -g3 -ggdb -o CMakeFiles/RTTI_Example.dir/src/Renderer.cpp.o -c /home/helpme/code/RTTI/src/Renderer.cpp",
+  "command": "/usr/bin/c++   -I/home/helpme/code/RTTI/include  -O3 -DNDEBUG   -std=c++1z -Wall -Wpedantic -Wextra -fexceptions -fno-rtti -o CMakeFiles/RTTI_Example.dir/src/ObjectList.cpp.o -c /home/helpme/code/RTTI/src/ObjectList.cpp",
+  "file": "/home/helpme/code/RTTI/src/ObjectList.cpp"
+},
+{
+  "directory": "/home/helpme/code/RTTI",
+  "command": "/usr/bin/c++   -I/home/helpme/code/RTTI/include  -O3 -DNDEBUG   -std=c++1z -Wall -Wpedantic -Wextra -fexceptions -fno-rtti -o CMakeFiles/RTTI_Example.dir/src/Renderer.cpp.o -c /home/helpme/code/RTTI/src/Renderer.cpp",
   "file": "/home/helpme/code/RTTI/src/Renderer.cpp"
 },
 {
   "directory": "/home/helpme/code/RTTI",
-  "command": "/usr/bin/c++   -I/home/helpme/code/RTTI/include  -g   -std=c++1z -Wall -Wpedantic -Wextra -fexceptions -fno-rtti -O0 -g3 -ggdb -o CMakeFiles/RTTI_Example.dir/src/TextLabel.cpp.o -c /home/helpme/code/RTTI/src/TextLabel.cpp",
+  "command": "/usr/bin/c++   -I/home/helpme/code/RTTI/include  -O3 -DNDEBUG   -std=c++1z -Wall -Wpedantic -Wextra -fexceptions -fno-rtti -o CMakeFiles/RTTI_Example.dir/src/TextLabel.cpp.o -c /home/helpme/code/RTTI/src/TextLabel.cpp",
   "file": "/home/helpme/code/RTTI/src/TextLabel.cpp"
 },
 {
   "directory": "/home/helpme/code/RTTI",
-  "command": "/usr/bin/c++   -I/home/helpme/code/RTTI/include  -g   -std=c++1z -Wall -Wpedantic -Wextra -fexceptions -fno-rtti -O0 -g3 -ggdb -o CMakeFiles/RTTI_Example.dir/src/main.cpp.o -c /home/helpme/code/RTTI/src/main.cpp",
+  "command": "/usr/bin/c++   -I/home/helpme/code/RTTI/include  -O3 -DNDEBUG   -std=c++1z -Wall -Wpedantic -Wextra -fexceptions -fno-rtti -o CMakeFiles/RTTI_Example.dir/src/main.cpp.o -c /home/helpme/code/RTTI/src/main.cpp",
   "file": "/home/helpme/code/RTTI/src/main.cpp"
+},
+{
+  "directory": "/home/helpme/code/RTTI",
+  "command": "/usr/bin/c++   -I/home/helpme/code/RTTI/include  -O3 -DNDEBUG   -std=c++1z -Wall -Wpedantic -Wextra -fexceptions -fno-rtti -o CMakeFiles/run_benchmark.dir/benchmark/run.cpp.o -c /home/helpme/code/RTTI/benchmark/run.cpp",
+  "file": "/home/helpme/code/RTTI/benchmark/run.cpp"
+},
+{
+  "directory": "/home/helpme/code/RTTI",
+  "command": "/usr/bin/c++   -I/home/helpme/code/RTTI/include  -O3 -DNDEBUG   -std=c++1z -Wall -Wpedantic -Wextra -fexceptions -fno-rtti -o CMakeFiles/run_benchmark.dir/src/Button.cpp.o -c /home/helpme/code/RTTI/src/Button.cpp",
+  "file": "/home/helpme/code/RTTI/src/Button.cpp"
+},
+{
+  "directory": "/home/helpme/code/RTTI",
+  "command": "/usr/bin/c++   -I/home/helpme/code/RTTI/include  -O3 -DNDEBUG   -std=c++1z -Wall -Wpedantic -Wextra -fexceptions -fno-rtti -o CMakeFiles/run_benchmark.dir/src/TextLabel.cpp.o -c /home/helpme/code/RTTI/src/TextLabel.cpp",
+  "file": "/home/helpme/code/RTTI/src/TextLabel.cpp"
 }
 ]

@@ -10,4 +10,5 @@ public:
     TextLabel(std::string&& s) : text(std::move(s)) {}
     void DrawMe() const;
     void Translate();
+    void DoNothing() const final;
 };

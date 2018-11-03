@@ -7,3 +7,4 @@ CMakeFiles/**
 CMakeCache.txt
 RTTI_Example
 src/stdafx.h.gch
+run_benchmark

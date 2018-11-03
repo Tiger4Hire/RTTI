@@ -1,6 +1,8 @@
 #include "TextLabel.h"
 #include <iostream>
 
+void TextLabel::DoNothing() const {}
+
 void TextLabel::DrawMe() const
 {
     std::cout << "I am a label containing \"" << text << "\"\n";

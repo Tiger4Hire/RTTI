@@ -11,3 +11,6 @@ add_compile_options(
 )
 add_executable(RTTI_Example ${SOURCES})
 include_directories(include)
+
+add_executable(run_benchmark benchmark/run.cpp src/Button.cpp src/TextLabel.cpp)
+target_link_libraries(run_benchmark benchmark benchmark_main pthread)
