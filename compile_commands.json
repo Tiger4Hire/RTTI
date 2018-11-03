@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/helpme/code/RTTI",
+  "command": "/usr/bin/c++   -I/home/helpme/code/RTTI/include  -g   -std=c++1z -o CMakeFiles/RTTI_Example.dir/src/Button.cpp.o -c /home/helpme/code/RTTI/src/Button.cpp",
+  "file": "/home/helpme/code/RTTI/src/Button.cpp"
+},
+{
+  "directory": "/home/helpme/code/RTTI",
+  "command": "/usr/bin/c++   -I/home/helpme/code/RTTI/include  -g   -std=c++1z -o CMakeFiles/RTTI_Example.dir/src/TextLabel.cpp.o -c /home/helpme/code/RTTI/src/TextLabel.cpp",
+  "file": "/home/helpme/code/RTTI/src/TextLabel.cpp"
+},
+{
+  "directory": "/home/helpme/code/RTTI",
+  "command": "/usr/bin/c++   -I/home/helpme/code/RTTI/include  -g   -std=c++1z -o CMakeFiles/RTTI_Example.dir/src/main.cpp.o -c /home/helpme/code/RTTI/src/main.cpp",
+  "file": "/home/helpme/code/RTTI/src/main.cpp"
+}
+]
