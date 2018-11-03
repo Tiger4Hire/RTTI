@@ -32,7 +32,14 @@
         "tuple": "cpp",
         "typeinfo": "cpp",
         "utility": "cpp",
-        "cstddef": "cpp"
+        "cstddef": "cpp",
+        "cinttypes": "cpp",
+        "cstring": "cpp",
+        "deque": "cpp",
+        "list": "cpp",
+        "memory": "cpp",
+        "numeric": "cpp",
+        "pointers": "cpp"
     },
     "C_Cpp.clang_format_sortIncludes": false
 }

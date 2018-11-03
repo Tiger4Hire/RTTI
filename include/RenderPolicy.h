@@ -2,6 +2,7 @@
 
 enum class RenderPolicy
 {
+    None,
     Render,
     TranslateAndRender
 };

@@ -6,7 +6,6 @@
  * "DoStuff". However, this type of coding is depressingly common, and this
  * example is to show how to re-engineer bad code. This fits my need.
  *************************************************************************/
-
 class Object
 {
 public:
@@ -21,5 +20,12 @@ public:
     // useful stuff
     virtual void DrawMe() = 0;
     virtual void Translate() {}
-    virtual RenderPolicy GetRenderPolicy() = 0;
+    virtual RenderPolicy GetRenderPolicy() { return RenderPolicy::None; }
+};
+
+template <RenderPolicy policy>
+class RenderedObject : public Object
+{
+public:
+    virtual RenderPolicy GetRenderPolicy() final { return policy; }
 };

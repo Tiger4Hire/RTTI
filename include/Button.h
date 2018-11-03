@@ -1,11 +1,7 @@
 #pragma once
 #include "Object.h"
 
-class Button : public Object
+class Button : public RenderedObject<RenderPolicy::TranslateAndRender>
 {
     void DrawMe() final;
-    virtual RenderPolicy GetRenderPolicy() final
-    {
-        return RenderPolicy::TranslateAndRender;
-    }
 };

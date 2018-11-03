@@ -8,7 +8,9 @@ void Renderer::RenderAndTranslateThing(Object& thing)
         case RenderPolicy::TranslateAndRender:
             thing.Translate();
             [[fallthrough]];  // disable warning that there is no break
-        default:
+        case RenderPolicy::Render:
             thing.DrawMe();
+        default:
+            break;
     }
 }

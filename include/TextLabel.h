@@ -2,7 +2,7 @@
 #include "Object.h"
 #include <string>
 
-class TextLabel : public Object
+class TextLabel : public RenderedObject<RenderPolicy::TranslateAndRender>
 {
     std::string text;
     void DrawMe() final;
@@ -10,8 +10,4 @@ class TextLabel : public Object
 public:
     TextLabel(std::string&& ref) : text(std::move(ref)) {}
     void Translate() final;
-    virtual RenderPolicy GetRenderPolicy() final
-    {
-        return RenderPolicy::TranslateAndRender;
-    }
 };
