@@ -26,5 +26,5 @@ int main()
 {
     auto my_list = MakeSomeObject();
     Renderer renderer;
-    my_list.visit([&](auto val) { renderer.Render(val); });
+    my_list.visit([&](auto val) -> void { renderer.Render(val); });
 }

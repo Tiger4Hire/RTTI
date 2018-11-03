@@ -2,6 +2,7 @@
 #include <algorithm>
 #include <gsl/gsl>
 using namespace std;
+/*
 template <class T>
 void vector_erase(vector<T>& container, int idx)
 {
@@ -34,3 +35,4 @@ void ObjectList::erase(int idx)
     }
     vector_erase(typeOrder, idx);
 }
+*/

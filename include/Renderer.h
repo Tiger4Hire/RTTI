@@ -1,5 +1,6 @@
 #pragma once
-#include "ObjectList.h"
+#include "Button.h"
+#include "TextLabel.h"
 
 class Renderer
 {
