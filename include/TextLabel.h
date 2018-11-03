@@ -10,5 +10,8 @@ class TextLabel : public Object
 public:
     TextLabel(std::string&& ref) : text(std::move(ref)) {}
     void Translate() final;
-    ObjectType GetType() final { return ObjectType::TextLabel; }
+    virtual RenderPolicy GetRenderPolicy() final
+    {
+        return RenderPolicy::TranslateAndRender;
+    }
 };

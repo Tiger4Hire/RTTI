@@ -7,12 +7,6 @@
  * example is to show how to re-engineer bad code. This fits my need.
  *************************************************************************/
 
-enum class ObjectType
-{
-    Button,
-    TextLabel
-};
-
 class Object
 {
 public:
@@ -25,9 +19,7 @@ public:
     Object(Object&&) = default;
     Object& operator=(Object&&) = default;
     // useful stuff
-    RenderPolicy GetRenderPolicy(ObjectType);  // note NOT VIRTUAL
-
     virtual void DrawMe() = 0;
     virtual void Translate() {}
-    virtual ObjectType GetType() = 0;
+    virtual RenderPolicy GetRenderPolicy() = 0;
 };

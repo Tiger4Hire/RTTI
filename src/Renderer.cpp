@@ -3,7 +3,7 @@
 
 void Renderer::RenderAndTranslateThing(Object& thing)
 {
-    switch (thing.GetRenderPolicy(thing.GetType()))
+    switch (thing.GetRenderPolicy())
     {
         case RenderPolicy::TranslateAndRender:
             thing.Translate();

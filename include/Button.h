@@ -4,5 +4,8 @@
 class Button : public Object
 {
     void DrawMe() final;
-    ObjectType GetType() final { return ObjectType::Button; }
+    virtual RenderPolicy GetRenderPolicy() final
+    {
+        return RenderPolicy::TranslateAndRender;
+    }
 };
