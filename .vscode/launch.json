@@ -10,10 +10,10 @@
             "request": "launch",
             "program": "${workspaceFolder}/RTTI_Example",
             "args": [],
-            "stopAtEntry": true,
+            "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
-            "externalConsole": false,
+            "internalConsoleOptions": "openOnSessionStart",
             "MIMode": "gdb",
             "setupCommands": [
                 {

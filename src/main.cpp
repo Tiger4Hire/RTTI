@@ -26,9 +26,8 @@ int main()
     auto my_bag_of_shit = MakeSomeObject();
     for (auto& thing : my_bag_of_shit)
     {
-        auto textLabel = dynamic_cast<TextLabel*>(thing.get());
-        if (textLabel)
-            textLabel->Translate();
+        if (thing->GetType() == ObjectType::TextLabel)
+            thing->Translate();
         thing->DrawMe();
     }
 }

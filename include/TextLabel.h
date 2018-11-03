@@ -9,5 +9,6 @@ class TextLabel : public Object
 
 public:
     TextLabel(std::string&& ref) : text(std::move(ref)) {}
-    void Translate();
+    void Translate() final;
+    ObjectType GetType() final { return ObjectType::TextLabel; }
 };

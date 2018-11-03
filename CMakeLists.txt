@@ -5,9 +5,9 @@ add_definitions(-std=c++1z)
 #set(SOURCES src/mainapp.cpp src/Student.cpp)
 #However, the file(GLOB...) allows for wildcard additions:
 file(GLOB SOURCES "src/*.cpp")
-add_executable(RTTI_Example ${SOURCES})
-include_directories(include)
 add_compile_options(
   "-Wall" "-Wpedantic" "-Wextra" "-fexceptions" "-fno-rtti"
   "$<$<CONFIG:DEBUG>:-O0;-g3;-ggdb>"
 )
+add_executable(RTTI_Example ${SOURCES})
+include_directories(include)
